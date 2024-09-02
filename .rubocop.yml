@@ -1,0 +1,44 @@
+AllCops:
+  TargetRubyVersion: 3.2
+  SuggestExtensions: false
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'config/**/*'
+    - 'Dangerfile'
+    - 'Dangerfile.spec'
+  NewCops: enable
+
+Rails:
+  Exclude:
+    - 'app/models/master/**/*' # Because using ActiveHash
+
+Style/Documentation:
+  Enabled: false
+
+# We already configured RSpec::Matchers#aggregate_failures by default.
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/FilePath:
+  Exclude:
+    - 'spec/requests/**/*'
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+Style:
+  Exclude:
+    - 'db/schema.rb'

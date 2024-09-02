@@ -1,0 +1,5 @@
+example_id                                                | status | run_time        |
+--------------------------------------------------------- | ------ | --------------- |
+./spec/interactors/utils/json_serializer_spec.rb[1:1:1:1] | passed | 0.01609 seconds |
+./spec/interactors/utils/json_serializer_spec.rb[1:1:2:1] | passed | 0.00164 seconds |
+./spec/interactors/utils/json_serializer_spec.rb[1:2:1]   | passed | 0.0032 seconds  |

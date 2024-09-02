@@ -1,0 +1,7 @@
+**/node_modules/**
+**/build/**
+**/dist/**
+**/.git/**
+**/public/**
+**/public/**
+lint-staged.config.mjs

@@ -1,0 +1,8 @@
+#!/bin/sh
+if yarn run is-ci; then
+  echo "Skipping postinstall in CI"
+  exit 0
+fi
+
+yarn run husky
+which gitmoji > /dev/null || npm install -g gitmoji-cli
