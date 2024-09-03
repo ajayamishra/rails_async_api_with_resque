@@ -12,6 +12,7 @@ gem 'interactor', '~> 3.0'
 gem 'interactor-rails', '~> 2.0'
 gem 'resque'
 gem 'alba'
+gem 'redis', '~> 4.8'
 
 gem 'bootsnap', require: false
 gem 'jbuilder'

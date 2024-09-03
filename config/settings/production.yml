@@ -1,0 +1,6 @@
+server:
+  app:
+    redis:
+      url: <%= ENV.fetch('REDIS_URL') %>
+      namespace: <%= ENV.fetch('REDIS_NAMESPACE') %>
+application_debug: <%= ENV.fetch('APPLICATION_DEBUG', false) %>
